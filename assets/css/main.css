@@ -16,15 +16,15 @@ body::-webkit-scrollbar:vertical {width:10px;}
 .main-body .body-left, .main-body .body-right{height: 100%;width: 50%;padding: 5pt;}
 .main-body .body-left .img{width: 100%;}
 .main-body .body-left .img svg{width: 100%;height: auto;}
-.main-body .body-left h4 {font-size: 1.6em;margin:0;line-height: 150%;text-align: center;font-weight: 400;}
-.main-body .body-left p{text-align: center;font-weight: 300;}
-.main-body .body-left .social-media{padding: 10px 0;text-align: center;}
-.main-body .body-left .social-media ul{padding: 0;}
-.main-body .body-left .social-media ul li {vertical-align: middle;display: inline-block;margin: 0 8px;}
-.main-body .body-left .social-media .bullet {display: block;color: #000;background-color: #fff;width: 40px;height: 40px;font-size: 1.6em;line-height: 40px;border-radius: 100%;-webkit-transition: all 0.3s linear;transition: all 0.3s linear;}
-.main-body .body-left .social-media ul li.facebook .bullet:hover {background-color: #5d82d1;color: #fff;}
-.main-body .body-left .social-media ul li.twitter .bullet:hover {background-color: #40bff5;color: #fff;}
-.main-body .body-left .social-media ul li.whatsapp .bullet:hover {background-color: #5CB100;color: #fff;}
+.footer h4 {font-size: 1.6em;margin:0;line-height: 150%;text-align: center;font-weight: 400;}
+.footer p{text-align: center;font-weight: 300;}
+.footer .social-media{padding: 10px 0;text-align: center;}
+.footer .social-media ul{padding: 0;}
+.footer .social-media ul li {vertical-align: middle;display: inline-block;margin: 0 8px;}
+.footer .social-media .bullet {display: block;color: #000;background-color: #fff;width: 40px;height: 40px;font-size: 1.6em;line-height: 40px;border-radius: 100%;-webkit-transition: all 0.3s linear;transition: all 0.3s linear;}
+.footer .social-media ul li.facebook .bullet:hover {background-color: #5d82d1;color: #fff;}
+.footer .social-media ul li.twitter .bullet:hover {background-color: #40bff5;color: #fff;}
+.footer .social-media ul li.whatsapp .bullet:hover {background-color: #5CB100;color: #fff;}
 
 .main-body .body-right .right-header{border-bottom: 10px solid #fff;width: auto;display: flow-root;}
 .main-body .body-right .right-header h5{font-size: 20pt;margin: 0;text-transform: uppercase;font-weight: 900;margin:5pt 0;float: left;}
@@ -44,3 +44,28 @@ body::-webkit-scrollbar:vertical {width:10px;}
 #btn-pendidik{cursor: pointer;}
 #btn-penjaga{cursor: pointer;}
 #btn-pelestari{cursor: pointer;}
+.mobile-slider{position: fixed;top: 0;left: 0;right: 0;bottom: 0;display: none;}
+.mobile-slider-content{padding: 5pt 20px;}
+.mobile-content{background-color: #fff;color: #000;padding: 2px 15px;font-weight: 300;border: 1px solid #000;max-height: 98vh;overflow-y: scroll;}
+h4.category{font-size: 30pt;margin: 5px;text-align: center;text-transform: uppercase;}
+p.category{margin: 5px;text-align: center;font-weight: 900;text-transform: uppercase;}
+.mobile-content h5{font-family: 'Beyond The Mountains';font-size: 25pt;text-align: center;margin: 0;line-height: 45px;}
+
+@media only screen and (max-width:1024px){
+    .main-body{display: block;position: relative;padding-bottom: 400px;}
+    .main-body .body-left, .main-body .body-right{width: auto;padding: 5pt 40pt;}
+    .footer{position: absolute;width: 400px;bottom: 0px;margin: 0 auto;left: 50%;margin-left: -200px;height: 400px;}
+    .main-body .body-right .right-body{padding: 10pt 50pt;}
+    .main-body .body-right .mini-right-footer{padding: 5pt 20pt;}
+}
+@media only screen and (max-width:650px){
+    .main-body .body-left, .main-body .body-right, .main-header{padding: 5pt 20pt;}
+    .main-header .title {line-height: 55px;}
+    .main-body .body-right .right-body {padding: 10pt 25pt;}
+    .main-body .body-right .mini-right-footer{padding: 5pt 10pt;}
+}
+
+@media only screen and (max-width:500px){
+    .main-header .title {line-height: 65px;font-size: 34pt;}
+    .main-body .body-left, .main-body .body-right, .main-header{padding: 5pt 10pt;}
+}
