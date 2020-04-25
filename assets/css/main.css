@@ -69,3 +69,6 @@ p.category{margin: 5px;text-align: center;font-weight: 900;text-transform: upper
     .main-header .title {line-height: 65px;font-size: 34pt;}
     .main-body .body-left, .main-body .body-right, .main-header{padding: 5pt 10pt;}
 }
+@media only screen and (max-width:320px){
+    .mobile-slider-content{padding: 5px 0px;}
+}
