@@ -1,7 +1,13 @@
 var width = ''
 $("BODY")[0].onresize = function () {
     width = $(document).width()
-    back()
+    var category = $('#main-category').val()
+    var main = $('#main').val()
+    $('.hide').css('opacity',1)
+    $('#category').html(category)
+    $('#main-content').html(main)
+    $('#category-name').hide()
+    $('.right-footer').hide()
 }
 function back() {
     var category = $('#main-category').val()
@@ -19,11 +25,11 @@ $(document).ready(function() {
     $('#category').html(category).addClass('bounceInDown')
     $('#main-content').html(main)
     width = $(document).width()
+    $('.mobile-slider-content').css('width',(width)+'px')
+    $('.slick-track').css('width',width*6+'px')
     setTimeout(function(){
         $('#category').removeClass('bounceInDown');
         $('#main-content').removeClass('bounceInDown')
-        $('.mobile-slider-content').css('width',(width)+'px')
-        $('.slick-track').css('width',width*6+'px')
     }, 760);
 })
 $(function() {
@@ -66,9 +72,11 @@ $(function() {
             $('.mobile-mini-content-2').html(content2)
             $('.mobile-mini-content-3').html(content3)
             $('.mobile-mini-content-4').html(content4)
+            $('.mobile-slider-content').css('width',(width)+'px')
+            $('.slick-track').css('width',width*6+'px')
             $('.mobile-slider').show()
             $('.mobile-content').addClass('bounceInDown')
-            setTimeout(function(){$('.mobile-content').removeClass('bounceInDown') })
+            setTimeout(function(){$('.mobile-content').removeClass('bounceInDown'), 1000})
         }
     })
 
@@ -110,9 +118,11 @@ $(function() {
             $('.mobile-mini-content-2').html(content2)
             $('.mobile-mini-content-3').html(content3)
             $('.mobile-mini-content-4').html(content4)
+            $('.mobile-slider-content').css('width',(width)+'px')
+            $('.slick-track').css('width',width*6+'px')
             $('.mobile-slider').show()
             $('.mobile-content').addClass('bounceInDown')
-            setTimeout(function(){$('.mobile-content').removeClass('bounceInDown') })
+            setTimeout(function(){$('.mobile-content').removeClass('bounceInDown'), 1000})
         }
     })
 
@@ -154,9 +164,11 @@ $(function() {
             $('.mobile-mini-content-2').html(content2)
             $('.mobile-mini-content-3').html(content3)
             $('.mobile-mini-content-4').html(content4)
+            $('.mobile-slider-content').css('width',(width)+'px')
+            $('.slick-track').css('width',width*6+'px')
             $('.mobile-slider').show()
             $('.mobile-content').addClass('bounceInDown')
-            setTimeout(function(){$('.mobile-content').removeClass('bounceInDown') })
+            setTimeout(function(){$('.mobile-content').removeClass('bounceInDown'), 1000})
         }
     })
 
@@ -198,9 +210,11 @@ $(function() {
             $('.mobile-mini-content-2').html(content2)
             $('.mobile-mini-content-3').html(content3)
             $('.mobile-mini-content-4').html(content4)
+            $('.mobile-slider-content').css('width',(width)+'px')
+            $('.slick-track').css('width',width*6+'px')
             $('.mobile-slider').show()
             $('.mobile-content').addClass('bounceInDown')
-            setTimeout(function(){$('.mobile-content').removeClass('bounceInDown') })
+            setTimeout(function(){$('.mobile-content').removeClass('bounceInDown'), 1000})
         }
     })
 
@@ -242,9 +256,11 @@ $(function() {
             $('.mobile-mini-content-2').html(content2)
             $('.mobile-mini-content-3').html(content3)
             $('.mobile-mini-content-4').html(content4)
+            $('.mobile-slider-content').css('width',(width)+'px')
+            $('.slick-track').css('width',width*6+'px')
             $('.mobile-slider').show()
             $('.mobile-content').addClass('bounceInDown')
-            setTimeout(function(){$('.mobile-content').removeClass('bounceInDown') })
+            setTimeout(function(){$('.mobile-content').removeClass('bounceInDown'), 1000})
         }
     })
 })
