@@ -36,7 +36,7 @@
 [dir='rtl'] .slick-next:before{content: '\f105';}
 /* Dots */
 .slick-dotted.slick-slider{margin-bottom:0;}
-.slick-dots{position: absolute;bottom: 10px;display: block;width: 100%;padding: 0;margin: 0;list-style: none;text-align: center;}
+.slick-dots{position: absolute;bottom: 10vh;display: block;width: 100%;padding: 0;margin: 0;list-style: none;text-align: center;}
 .slick-dots li{position: relative;display: inline-block;width:15px !important;height:15px !important;margin: 0 2px;padding: 0 !important;cursor: pointer; float:none !important;}
 .slick-dots li button{font-size: 0;line-height: 0;display: block;width:15px;height:15px;padding:3px;cursor: pointer;color: transparent;border: 0;outline: none;background: transparent;}
 .slick-dots li button:hover,.slick-dots li button:focus{outline: none;}

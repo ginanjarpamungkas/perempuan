@@ -5,16 +5,17 @@ body.hide-scroll{overflow: hidden;max-height: 100vh;}
 @font-face {font-family: 'Beyond The Mountains';src: url('beyond_the_mountains.ttf');}
 a {text-decoration: none;color: #7C8840;}
 a:hover{color: aqua;}
-a.close{text-decoration: none;color: #000;background: #fff;padding: 6pt 10pt;text-align: center;display: block;width: fit-content;border: 1px solid black;float: right;margin-top: 5pt;}
+a.close{text-decoration: none;color: #000;background: #fff;padding: 6pt 10pt;text-align: center;display: block;width: fit-content;border: 1px solid black;float: right;margin-bottom: 5pt;}
 .main{width: 100%;overflow: hidden;}
 .main .logo{width: 150px;margin: 5pt auto;display: block;padding-bottom:20pt}
 .main-header .title{font-family: 'Beyond The Mountains';margin: 10pt auto;text-align: center;font-size: 40pt;font-weight: 100;}
 
-.main-body{height: 100%;margin-bottom: 30pt;padding: 0 20%;}
-/* .main-body .body-left, .main-body .body-right{height: 100%;width: 50%;padding: 5pt;} */
+.main-body{height: 100%;margin-bottom: 30pt;padding: 0 5pt;display: flex;}
+.main-body .body-left, .main-body .body-right{height: 100%;width: 50%;padding: 5pt;}
 .main-body .img{width: 100%;}
 .main-body .img svg{width: 100%;height: auto;}
-.footer h4 {font-size: 1.6em;margin:0;line-height: 150%;text-align: center;font-weight: 400;}
+.footer {padding: 0 20%;}
+.footer h4 {font-size: 1.6em;margin:0;line-height: 150%;text-align: center;font-weight: 900;}
 .footer p{text-align: center;font-weight: 300;}
 .footer .social-media{padding: 10px 0;text-align: center;}
 .footer .social-media ul{padding: 0;}
@@ -28,11 +29,6 @@ a.close{text-decoration: none;color: #000;background: #fff;padding: 6pt 10pt;tex
 .main-body .right-header h5{font-size: 20pt;margin: 0;text-transform: uppercase;font-weight: 900;margin:5pt 0;float: left;}
 .main-body .right-header h5.name{font-family: 'Beyond The Mountains';font-weight:100;font-size: 25pt;text-transform: none;float: right;display: none;margin: 0;padding-right: 5pt;}
 .main-body .right-body{font-weight: 300;width: auto;margin-top: 10pt;background-color: #fff;color: #000;padding: 1pt 10pt;padding-bottom: 10pt;line-height: 25px;}
-/* .main-body .body-right .right-footer {box-sizing: border-box;display: none;}
-.main-body .body-right .mini-right-footer h5{font-family: 'Beyond The Mountains';font-weight:100;font-size: 25pt;text-transform: none;margin: 0;text-align: center;margin-top: 20px;margin-bottom: 20px;line-height: 30pt;}
-.main-body .body-right .mini-right-footer{font-weight: 300;background-color: #fff;color: #000;padding: 5pt 10pt;display: inline-block;flex: 1;line-height: 25px;}
-.main-body .body-right .mini-right-footer.left{margin: 5pt 0; margin-right: 5pt;}
-.main-body .body-right .mini-right-footer.right{margin: 5pt 0; margin-left: 5pt;} */
 
 .btn{background: #fff;color:#000;padding: 6pt 12pt;border-radius: 10px;display: block;width: fit-content;margin: 0 auto;cursor: pointer;text-decoration: none;}
 .btn:hover{background: #000;color: #fff;}
@@ -55,6 +51,7 @@ p.category{margin: 5px;text-align: center;font-weight: 900;text-transform: upper
 .mobile-content h5{font-family: 'Beyond The Mountains';font-size: 25pt;text-align: center;margin: 0;line-height: 45px;}
 
 @media only screen and (max-width:1024px){
+    .footer, .main-body {display: block;padding: 0 10%;}
     .main-body .body-left, .main-body .body-right{width: auto;padding: 5pt 40pt;}
     .main-body .body-right .right-body{padding: 10pt 50pt;}
     .main-body .body-right .mini-right-footer{padding: 5pt 20pt;}
@@ -67,9 +64,10 @@ p.category{margin: 5px;text-align: center;font-weight: 900;text-transform: upper
 }
 
 @media only screen and (max-width:500px){
+    .main-body .body-left, .main-body .body-right, .main-header{padding: 5pt 0pt;}
     .footer h4 {font-size: 1.2em;}
     .footer p {font-size: 13px;}
     .main-header .title {line-height: 65px;font-size: 34pt;}
-    .main-body, .main-header{padding: 5pt 10pt;}
+    .footer,.main-body, .main-header{padding: 5pt 10pt;}
     .container-slider {padding: 0;}
 }
