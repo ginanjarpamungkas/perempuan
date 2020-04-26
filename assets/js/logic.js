@@ -10,14 +10,9 @@ $("BODY")[0].onresize = function () {
     $('.right-footer').hide()
 }
 function back() {
-    var category = $('#main-category').val()
-    var main = $('#main').val()
+    $('.mobile-content').removeClass('bounceInDown')
+    $('.mobile-slider').hide()
     $('.hide').css('opacity',1)
-    $('#category').html(category).addClass('bounceInDown')
-    $('#main-content').html(main).addClass('bounceInDown')
-    $('#category-name').hide()
-    $('.right-footer').hide()
-    setTimeout(function(){ $('#category').removeClass('bounceInDown');$('#main-content').removeClass('bounceInDown')}, 750);
 }
 $(document).ready(function() {
     var category = $('#main-category').val()
@@ -33,7 +28,7 @@ $(document).ready(function() {
     }, 760);
 })
 $(function() {
-    $(".mobile-slider").slick({dots: false,arrows:true,speed: 1000,slidesToShow: 1,slidesToScroll: 1,infinite:false,});
+    $(".mobile-slider").slick({dots: true,arrows:true,speed: 1000,slidesToShow: 1,slidesToScroll: 1,infinite:false,});
     $('#btn-penjaga').on('click',function () {
         var category = $('#main-category-penjaga').val()
         var main = $('#main-penjaga').val()
@@ -47,14 +42,15 @@ $(function() {
         $('.hide.penjaga').css('opacity',1)
         if (width > 500) {
             $('#category').html(category).addClass('bounceInDown')
-            $('#main-content').html(main).append(mini).addClass('bounceInRight')
             $('#category-name').html(name).show().addClass('bounceInRight')
-            $('#mini-content-1').html(content1).addClass('bounceInRight')
-            $('#mini-content-2').html(content2).addClass('bounceInRight')
-            $('#mini-content-3').html(content3).addClass('bounceInRight')
-            $('#mini-content-4').html(content4).addClass('bounceInRight')
+            $('#main-content, #mini-content-1, #mini-content-2, #mini-content-3, #mini-content-4').hide()
+            setTimeout(function(){$('#main-content').html(main).append(mini).show().addClass('bounceInRight')},750);
+            setTimeout(function(){$('#mini-content-1').html(content1).show().addClass('bounceInRight')},1500);
+            setTimeout(function(){$('#mini-content-2').html(content2).show().addClass('bounceInRight')},2250);
+            setTimeout(function(){$('#mini-content-3').html(content3).show().addClass('bounceInRight')},3000);
+            setTimeout(function(){$('#mini-content-4').html(content4).show().addClass('bounceInRight')},3750);
             $('.right-footer').css('display','flex')
-            setTimeout(function(){ 
+            setTimeout(function(){
                 $('#category').removeClass('bounceInDown')
                 $('#main-content').removeClass('bounceInRight')
                 $('#category-name').removeClass('bounceInRight')
@@ -62,7 +58,7 @@ $(function() {
                 $('#mini-content-2').removeClass('bounceInRight')
                 $('#mini-content-3').removeClass('bounceInRight')
                 $('#mini-content-4').removeClass('bounceInRight')
-            }, 750);
+            }, 4500);
         } else {
             $('.category').html(category)
             $('.mobile-main-content').html(main)
@@ -76,7 +72,7 @@ $(function() {
             $('.slick-track').css('width',width*6+'px')
             $('.mobile-slider').show()
             $('.mobile-content').addClass('bounceInDown')
-            setTimeout(function(){$('.mobile-content').removeClass('bounceInDown'), 1000})
+            
         }
     })
 
@@ -93,14 +89,15 @@ $(function() {
         $('.hide.pelestari').css('opacity',1)
         if (width > 500) {
             $('#category').html(category).addClass('bounceInDown')
-            $('#main-content').html(main).append(mini).addClass('bounceInRight')
             $('#category-name').html(name).show().addClass('bounceInRight')
-            $('#mini-content-1').html(content1).addClass('bounceInRight')
-            $('#mini-content-2').html(content2).addClass('bounceInRight')
-            $('#mini-content-3').html(content3).addClass('bounceInRight')
-            $('#mini-content-4').html(content4).addClass('bounceInRight')
+            $('#main-content, #mini-content-1, #mini-content-2, #mini-content-3, #mini-content-4').hide()
+            setTimeout(function(){$('#main-content').html(main).append(mini).show().addClass('bounceInRight')},750);
+            setTimeout(function(){$('#mini-content-1').html(content1).show().addClass('bounceInRight')},1500);
+            setTimeout(function(){$('#mini-content-2').html(content2).show().addClass('bounceInRight')},2250);
+            setTimeout(function(){$('#mini-content-3').html(content3).show().addClass('bounceInRight')},3000);
+            setTimeout(function(){$('#mini-content-4').html(content4).show().addClass('bounceInRight')},3750);
             $('.right-footer').css('display','flex')
-            setTimeout(function(){ 
+            setTimeout(function(){
                 $('#category').removeClass('bounceInDown')
                 $('#main-content').removeClass('bounceInRight')
                 $('#category-name').removeClass('bounceInRight')
@@ -108,7 +105,7 @@ $(function() {
                 $('#mini-content-2').removeClass('bounceInRight')
                 $('#mini-content-3').removeClass('bounceInRight')
                 $('#mini-content-4').removeClass('bounceInRight')
-            }, 750);
+            }, 4500);
         } else {
             $('.category').html(category)
             $('.mobile-main-content').html(main)
@@ -122,7 +119,7 @@ $(function() {
             $('.slick-track').css('width',width*6+'px')
             $('.mobile-slider').show()
             $('.mobile-content').addClass('bounceInDown')
-            setTimeout(function(){$('.mobile-content').removeClass('bounceInDown'), 1000})
+            
         }
     })
 
@@ -139,14 +136,15 @@ $(function() {
         $('.hide.penggerak').css('opacity',1)
         if (width > 500) {
             $('#category').html(category).addClass('bounceInDown')
-            $('#main-content').html(main).append(mini).addClass('bounceInRight')
             $('#category-name').html(name).show().addClass('bounceInRight')
-            $('#mini-content-1').html(content1).addClass('bounceInRight')
-            $('#mini-content-2').html(content2).addClass('bounceInRight')
-            $('#mini-content-3').html(content3).addClass('bounceInRight')
-            $('#mini-content-4').html(content4).addClass('bounceInRight')
+            $('#main-content, #mini-content-1, #mini-content-2, #mini-content-3, #mini-content-4').hide()
+            setTimeout(function(){$('#main-content').html(main).append(mini).show().addClass('bounceInRight')},750);
+            setTimeout(function(){$('#mini-content-1').html(content1).show().addClass('bounceInRight')},1500);
+            setTimeout(function(){$('#mini-content-2').html(content2).show().addClass('bounceInRight')},2250);
+            setTimeout(function(){$('#mini-content-3').html(content3).show().addClass('bounceInRight')},3000);
+            setTimeout(function(){$('#mini-content-4').html(content4).show().addClass('bounceInRight')},3750);
             $('.right-footer').css('display','flex')
-            setTimeout(function(){ 
+            setTimeout(function(){
                 $('#category').removeClass('bounceInDown')
                 $('#main-content').removeClass('bounceInRight')
                 $('#category-name').removeClass('bounceInRight')
@@ -154,7 +152,7 @@ $(function() {
                 $('#mini-content-2').removeClass('bounceInRight')
                 $('#mini-content-3').removeClass('bounceInRight')
                 $('#mini-content-4').removeClass('bounceInRight')
-            }, 750);
+            }, 4500);
         } else {
             $('.category').html(category)
             $('.mobile-main-content').html(main)
@@ -168,7 +166,7 @@ $(function() {
             $('.slick-track').css('width',width*6+'px')
             $('.mobile-slider').show()
             $('.mobile-content').addClass('bounceInDown')
-            setTimeout(function(){$('.mobile-content').removeClass('bounceInDown'), 1000})
+            
         }
     })
 
@@ -185,14 +183,15 @@ $(function() {
         $('.hide.pendidik').css('opacity',1)
         if (width > 500) {
             $('#category').html(category).addClass('bounceInDown')
-            $('#main-content').html(main).append(mini).addClass('bounceInRight')
             $('#category-name').html(name).show().addClass('bounceInRight')
-            $('#mini-content-1').html(content1).addClass('bounceInRight')
-            $('#mini-content-2').html(content2).addClass('bounceInRight')
-            $('#mini-content-3').html(content3).addClass('bounceInRight')
-            $('#mini-content-4').html(content4).addClass('bounceInRight')
+            $('#main-content, #mini-content-1, #mini-content-2, #mini-content-3, #mini-content-4').hide()
+            setTimeout(function(){$('#main-content').html(main).append(mini).show().addClass('bounceInRight')},750);
+            setTimeout(function(){$('#mini-content-1').html(content1).show().addClass('bounceInRight')},1500);
+            setTimeout(function(){$('#mini-content-2').html(content2).show().addClass('bounceInRight')},2250);
+            setTimeout(function(){$('#mini-content-3').html(content3).show().addClass('bounceInRight')},3000);
+            setTimeout(function(){$('#mini-content-4').html(content4).show().addClass('bounceInRight')},3750);
             $('.right-footer').css('display','flex')
-            setTimeout(function(){ 
+            setTimeout(function(){
                 $('#category').removeClass('bounceInDown')
                 $('#main-content').removeClass('bounceInRight')
                 $('#category-name').removeClass('bounceInRight')
@@ -200,7 +199,7 @@ $(function() {
                 $('#mini-content-2').removeClass('bounceInRight')
                 $('#mini-content-3').removeClass('bounceInRight')
                 $('#mini-content-4').removeClass('bounceInRight')
-            }, 750);
+            }, 4500);
         } else {
             $('.category').html(category)
             $('.mobile-main-content').html(main)
@@ -214,7 +213,7 @@ $(function() {
             $('.slick-track').css('width',width*6+'px')
             $('.mobile-slider').show()
             $('.mobile-content').addClass('bounceInDown')
-            setTimeout(function(){$('.mobile-content').removeClass('bounceInDown'), 1000})
+            
         }
     })
 
@@ -231,14 +230,15 @@ $(function() {
         $('.hide.pembela').css('opacity',1)
         if (width > 500) {
             $('#category').html(category).addClass('bounceInDown')
-            $('#main-content').html(main).append(mini).addClass('bounceInRight')
             $('#category-name').html(name).show().addClass('bounceInRight')
-            $('#mini-content-1').html(content1).addClass('bounceInRight')
-            $('#mini-content-2').html(content2).addClass('bounceInRight')
-            $('#mini-content-3').html(content3).addClass('bounceInRight')
-            $('#mini-content-4').html(content4).addClass('bounceInRight')
+            $('#main-content, #mini-content-1, #mini-content-2, #mini-content-3, #mini-content-4').hide()
+            setTimeout(function(){$('#main-content').html(main).append(mini).show().addClass('bounceInRight')},750);
+            setTimeout(function(){$('#mini-content-1').html(content1).show().addClass('bounceInRight')},1500);
+            setTimeout(function(){$('#mini-content-2').html(content2).show().addClass('bounceInRight')},2250);
+            setTimeout(function(){$('#mini-content-3').html(content3).show().addClass('bounceInRight')},3000);
+            setTimeout(function(){$('#mini-content-4').html(content4).show().addClass('bounceInRight')},3750);
             $('.right-footer').css('display','flex')
-            setTimeout(function(){ 
+            setTimeout(function(){
                 $('#category').removeClass('bounceInDown')
                 $('#main-content').removeClass('bounceInRight')
                 $('#category-name').removeClass('bounceInRight')
@@ -246,7 +246,7 @@ $(function() {
                 $('#mini-content-2').removeClass('bounceInRight')
                 $('#mini-content-3').removeClass('bounceInRight')
                 $('#mini-content-4').removeClass('bounceInRight')
-            }, 750);
+            }, 4500);
         } else {
             $('.category').html(category)
             $('.mobile-main-content').html(main)
@@ -260,7 +260,7 @@ $(function() {
             $('.slick-track').css('width',width*6+'px')
             $('.mobile-slider').show()
             $('.mobile-content').addClass('bounceInDown')
-            setTimeout(function(){$('.mobile-content').removeClass('bounceInDown'), 1000})
+            
         }
     })
 })
