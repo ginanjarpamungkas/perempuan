@@ -44,4 +44,4 @@
 .slick-dots li button:before{font-family: 'FontAwesome';font-size:12px;line-height:15px;position: absolute;top: 0;left: 0;width:15px;height: 15px;content: '\f111';text-align: center;color:rgba(255,255,255,0.8);-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
 .slick-dots li.slick-active button:before{color:aqua;}
 /* modif */
-.slick-slider .slick-track{display: flex;align-items: center;justify-content: center;height: 100vh;background-color: rgb(0, 0, 0, 0.5);}
+.slick-slider .slick-track{display: flex;align-items: center;justify-content: center;height: 100vh;}
