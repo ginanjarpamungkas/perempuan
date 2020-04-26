@@ -1,5 +1,6 @@
 html{scroll-behavior: smooth;}
 body{margin:0;font-family: 'Montserrat', sans-serif;background-color:#7C8840;color: #fff;}
+body.hide-scroll{overflow: hidden;max-height: 100vh;}
 
 @font-face {font-family: 'Beyond The Mountains';src: url('beyond_the_mountains.ttf');}
 a {text-decoration: none;color: #7C8840;}
