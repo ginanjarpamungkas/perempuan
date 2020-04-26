@@ -7,14 +7,6 @@ function back() {
 }
 $(document).ready(function() {
     $(".mobile-slider").slick({dots: true,arrows:true,speed: 1000,slidesToShow: 1,slidesToScroll: 1,infinite:false,});
-    var category = $('#main-category').val()
-    var main = $('#main').val()
-    $('#category').html(category).addClass('bounceIn')
-    $('#main-content').html(main)
-    setTimeout(function(){
-        $('#category').removeClass('bounceInDown');
-        $('#main-content').removeClass('bounceInDown')
-    }, 760);
 })
 $(function() {
     $('#btn-penjaga').on('click',function () {
